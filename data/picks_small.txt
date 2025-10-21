@@ -1,0 +1,9 @@
+# Small pick list for testing exhaustive algorithm
+# Only 8 picks - exhaustive search will test all permutations
+
+A1-1
+A1-4
+B1-3
+C1-1
+C2-3
+A2-6

@@ -1,0 +1,25 @@
+# Sample pick locations for warehouse_large.json
+# One location ID per line
+# Lines starting with # are comments
+
+# Picks from various racks
+A1-7
+A1-8
+A1-9
+B1-3
+B1-5
+B1-12
+C1-12
+C1-10
+C1-8
+H1-6
+C2-3
+A2-12
+A2-11
+C2-11
+E2-1
+F2-8
+G2-8
+F1-10
+G1-11
+G1-8
