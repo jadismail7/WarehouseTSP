@@ -1,0 +1,670 @@
+[
+  {
+    "id": "Dock_Receiving_1",
+    "center": {"x": 10, "y": 10},
+    "width": 15,
+    "depth": 8,
+    "type": "dock",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Dock_Receiving_1", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Dock_Receiving_2",
+    "center": {"x": 30, "y": 10},
+    "width": 15,
+    "depth": 8,
+    "type": "dock",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Dock_Receiving_2", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Dock_Shipping_1",
+    "center": {"x": 270, "y": 10},
+    "width": 15,
+    "depth": 8,
+    "type": "dock",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Dock_Shipping_1", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Dock_Shipping_2",
+    "center": {"x": 290, "y": 10},
+    "width": 15,
+    "depth": 8,
+    "type": "dock",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Dock_Shipping_2", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Staging_Area_West",
+    "center": {"x": 20, "y": 25},
+    "width": 20,
+    "depth": 10,
+    "type": "staging",
+    "traversable": true,
+    "pick_points": [
+      {"id": "Staging_West", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Staging_Area_East",
+    "center": {"x": 280, "y": 25},
+    "width": 20,
+    "depth": 10,
+    "type": "staging",
+    "traversable": true,
+    "pick_points": [
+      {"id": "Staging_East", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Charging_Station_1",
+    "center": {"x": 20, "y": 260},
+    "width": 12,
+    "depth": 8,
+    "type": "charging",
+    "traversable": true,
+    "pick_points": [
+      {"id": "ChargingStation_1", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "Charging_Station_2",
+    "center": {"x": 280, "y": 260},
+    "width": 12,
+    "depth": 8,
+    "type": "charging",
+    "traversable": true,
+    "pick_points": [
+      {"id": "ChargingStation_2", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  
+  {
+    "id": "CrossAisle_North",
+    "center": {"x": 150, "y": 40},
+    "width": 240,
+    "depth": 6,
+    "type": "aisle",
+    "traversable": true,
+    "pick_points": [
+      {"id": "CrossAisle_North", "offset": {"x": 0, "y": 0}},
+      {"id": "Aisle_A_North", "offset": {"x": -92.5, "y": 0}},
+      {"id": "Aisle_B_North", "offset": {"x": -52.5, "y": 0}},
+      {"id": "Aisle_C_North", "offset": {"x": -12.5, "y": 0}},
+      {"id": "Aisle_D_North", "offset": {"x": 27.5, "y": 0}},
+      {"id": "Aisle_E_North", "offset": {"x": 67.5, "y": 0}},
+      {"id": "Aisle_F_North", "offset": {"x": 107.5, "y": 0}}
+    ]
+  },
+  {
+    "id": "CrossAisle_Mid1",
+    "center": {"x": 150, "y": 90},
+    "width": 240,
+    "depth": 6,
+    "type": "aisle",
+    "traversable": true,
+    "pick_points": [
+      {"id": "CrossAisle_Mid1", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "CrossAisle_Mid2",
+    "center": {"x": 150, "y": 140},
+    "width": 240,
+    "depth": 6,
+    "type": "aisle",
+    "traversable": true,
+    "pick_points": [
+      {"id": "CrossAisle_Mid2", "offset": {"x": 0, "y": 0}},
+      {"id": "Aisle_A_Mid", "offset": {"x": -92.5, "y": 0}},
+      {"id": "Aisle_B_Mid", "offset": {"x": -52.5, "y": 0}},
+      {"id": "Aisle_C_Mid", "offset": {"x": -12.5, "y": 0}},
+      {"id": "Aisle_D_Mid", "offset": {"x": 27.5, "y": 0}},
+      {"id": "Aisle_E_Mid", "offset": {"x": 67.5, "y": 0}},
+      {"id": "Aisle_F_Mid", "offset": {"x": 107.5, "y": 0}}
+    ]
+  },
+  {
+    "id": "CrossAisle_Mid3",
+    "center": {"x": 150, "y": 190},
+    "width": 240,
+    "depth": 6,
+    "type": "aisle",
+    "traversable": true,
+    "pick_points": [
+      {"id": "CrossAisle_Mid3", "offset": {"x": 0, "y": 0}}
+    ]
+  },
+  {
+    "id": "CrossAisle_South",
+    "center": {"x": 150, "y": 240},
+    "width": 240,
+    "depth": 6,
+    "type": "aisle",
+    "traversable": true,
+    "pick_points": [
+      {"id": "CrossAisle_South", "offset": {"x": 0, "y": 0}},
+      {"id": "Aisle_A_South", "offset": {"x": -92.5, "y": 0}},
+      {"id": "Aisle_B_South", "offset": {"x": -52.5, "y": 0}},
+      {"id": "Aisle_C_South", "offset": {"x": -12.5, "y": 0}},
+      {"id": "Aisle_D_South", "offset": {"x": 27.5, "y": 0}},
+      {"id": "Aisle_E_South", "offset": {"x": 107.5, "y": 0}},
+      {"id": "Aisle_F_South", "offset": {"x": 107.5, "y": 0}}
+    ]
+  },
+
+  {
+    "id": "Rack_A1",
+    "center": {"x": 50, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "A1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "A1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "A1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "A1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "A1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "A1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_A2",
+    "center": {"x": 65, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "A2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "A2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "A2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "A2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "A2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "A2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_A",
+    "center": {"x": 57.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_A3",
+    "center": {"x": 50, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "A3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "A3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "A3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "A3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "A3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "A3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_A4",
+    "center": {"x": 65, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "A4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "A4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "A4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "A4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "A4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "A4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Rack_B1",
+    "center": {"x": 90, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "B1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "B1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "B1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "B1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "B1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "B1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_B2",
+    "center": {"x": 105, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "B2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "B2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "B2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "B2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "B2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "B2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_B",
+    "center": {"x": 97.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_B3",
+    "center": {"x": 90, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "B3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "B3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "B3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "B3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "B3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "B3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_B4",
+    "center": {"x": 105, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "B4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "B4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "B4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "B4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "B4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "B4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Rack_C1",
+    "center": {"x": 130, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "C1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "C1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "C1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "C1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "C1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "C1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_C2",
+    "center": {"x": 145, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "C2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "C2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "C2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "C2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "C2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "C2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_C",
+    "center": {"x": 137.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_C3",
+    "center": {"x": 130, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "C3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "C3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "C3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "C3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "C3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "C3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_C4",
+    "center": {"x": 145, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "C4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "C4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "C4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "C4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "C4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "C4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Rack_D1",
+    "center": {"x": 170, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "D1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "D1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "D1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "D1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "D1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "D1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_D2",
+    "center": {"x": 185, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "D2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "D2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "D2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "D2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "D2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "D2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_D",
+    "center": {"x": 177.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_D3",
+    "center": {"x": 170, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "D3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "D3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "D3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "D3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "D3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "D3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_D4",
+    "center": {"x": 185, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "D4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "D4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "D4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "D4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "D4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "D4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Rack_E1",
+    "center": {"x": 210, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "E1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "E1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "E1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "E1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "E1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "E1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_E2",
+    "center": {"x": 225, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "E2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "E2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "E2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "E2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "E2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "E2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_E",
+    "center": {"x": 217.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_E3",
+    "center": {"x": 210, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "E3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "E3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "E3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "E3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "E3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "E3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_E4",
+    "center": {"x": 225, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "E4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "E4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "E4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "E4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "E4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "E4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Rack_F1",
+    "center": {"x": 250, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "F1-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "F1-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "F1-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "F1-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "F1-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "F1-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_F2",
+    "center": {"x": 265, "y": 87.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "F2-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "F2-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "F2-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "F2-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "F2-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "F2-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "MainAisle_F",
+    "center": {"x": 257.5, "y": 140},
+    "width": 8,
+    "depth": 200,
+    "type": "aisle",
+    "traversable": true
+  },
+  {
+    "id": "Rack_F3",
+    "center": {"x": 250, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "F3-1", "offset": {"x": -3, "y": -37.5}},
+      {"id": "F3-2", "offset": {"x": -3, "y": -22.5}},
+      {"id": "F3-3", "offset": {"x": -3, "y": -7.5}},
+      {"id": "F3-4", "offset": {"x": -3, "y": 7.5}},
+      {"id": "F3-5", "offset": {"x": -3, "y": 22.5}},
+      {"id": "F3-6", "offset": {"x": -3, "y": 37.5}}
+    ]
+  },
+  {
+    "id": "Rack_F4",
+    "center": {"x": 265, "y": 192.5},
+    "width": 4,
+    "depth": 80,
+    "type": "rack",
+    "traversable": false,
+    "pick_points": [
+      {"id": "F4-1", "offset": {"x": 3, "y": -37.5}},
+      {"id": "F4-2", "offset": {"x": 3, "y": -22.5}},
+      {"id": "F4-3", "offset": {"x": 3, "y": -7.5}},
+      {"id": "F4-4", "offset": {"x": 3, "y": 7.5}},
+      {"id": "F4-5", "offset": {"x": 3, "y": 22.5}},
+      {"id": "F4-6", "offset": {"x": 3, "y": 37.5}}
+    ]
+  },
+
+  {
+    "id": "Office_West",
+    "center": {"x": 10, "y": 270},
+    "width": 15,
+    "depth": 20,
+    "type": "office",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Office_West", "offset": {"x": 5, "y": 0}}
+    ]
+  },
+  {
+    "id": "Office_East",
+    "center": {"x": 290, "y": 270},
+    "width": 15,
+    "depth": 20,
+    "type": "office",
+    "traversable": false,
+    "pick_points": [
+      {"id": "Office_East", "offset": {"x": -5, "y": 0}}
+    ]
+  },
+  
+  {
+    "id": "PackingStation_1",
+    "center": {"x": 50, "y": 270},
+    "width": 12,
+    "depth": 8,
+    "type": "packing",
+    "traversable": false,
+    "pick_points": [
+      {"id": "PackingStation_1", "offset": {"x": 0, "y": -5}}
+    ]
+  },
+  {
+    "id": "PackingStation_2",
+    "center": {"x": 70, "y": 270},
+    "width": 12,
+    "depth": 8,
+    "type": "packing",
+    "traversable": false,
+    "pick_points": [
+      {"id": "PackingStation_2", "offset": {"x": 0, "y": -5}}
+    ]
+  },
+  {
+    "id": "PackingStation_3",
+    "center": {"x": 230, "y": 270},
+    "width": 12,
+    "depth": 8,
+    "type": "packing",
+    "traversable": false,
+    "pick_points": [
+      {"id": "PackingStation_3", "offset": {"x": 0, "y": -5}}
+    ]
+  },
+  {
+    "id": "PackingStation_4",
+    "center": {"x": 250, "y": 270},
+    "width": 12,
+    "depth": 8,
+    "type": "packing",
+    "traversable": false,
+    "pick_points": [
+      {"id": "PackingStation_4", "offset": {"x": 0, "y": -5}}
+    ]
+  }
+]

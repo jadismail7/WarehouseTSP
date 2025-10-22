@@ -56,7 +56,7 @@ def solve_tsp(G, pick_locations, cycle=False, method='christofides'):
         return None, None
     
     if method == 'christofides':
-        # Christofides algorithm (1.5-approximation for metric TSP)
+        # Christofides algorithm
         tsp_route = approx.traveling_salesman_problem(
             G, nodes=valid_picks, cycle=cycle, weight='weight', method=approx.christofides
         )

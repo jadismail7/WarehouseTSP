@@ -1,0 +1,11 @@
+# Small warehouse pick list for testing with enhanced rack-aware routing
+# 8 picks across different zones
+
+A1-1
+A2-2
+B1-2
+B2-3
+C1-3
+C1-1
+Staging_1
+A1-3

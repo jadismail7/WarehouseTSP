@@ -100,4 +100,4 @@ def print_graph_summary(G):
     # Check connectivity
     if not nx.is_connected(G):
         components = list(nx.connected_components(G))
-        print(f"⚠ Warning: {len(components)} disconnected components")
+        print(f"Warning: {len(components)} disconnected components")
