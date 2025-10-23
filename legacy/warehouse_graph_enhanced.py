@@ -13,6 +13,7 @@ import networkx as nx
 from sklearn.cluster import DBSCAN
 from collections import defaultdict
 import numpy as np
+import pandas as pd
 
 
 def calculate_distance(p1, p2):
@@ -36,6 +37,10 @@ def infer_racks_from_bins(locs, bin_spacing_tolerance=20, vertical_alignment_tol
     Returns:
         DataFrame with added 'rack_id' and 'rack_side' columns
     """
+    # Add 'type' column if missing (default all to 'picking')
+    if 'type' not in locs.columns:
+        locs['type'] = 'picking'
+    
     # Filter to only picking locations (bins)
     bins = locs[locs['type'] == 'picking'].copy()
     
@@ -567,19 +572,25 @@ def analyze_graph_quality(G, locs, verbose=True):
     metrics['is_connected'] = nx.is_connected(G)
     metrics['num_components'] = nx.number_connected_components(G)
     
-    # Traversability stats
-    traversable_nodes = sum(1 for n in G.nodes() if G.nodes[n]['traversable'])
+    # Traversability stats (handle cases where 'traversable' attribute may not exist)
+    traversable_nodes = sum(1 for n in G.nodes() if G.nodes[n].get('traversable', True))
     metrics['traversable_nodes'] = traversable_nodes
     metrics['obstacle_nodes'] = metrics['num_nodes'] - traversable_nodes
     
-    # Rack detection
-    num_racks = len(set(locs['rack_id']) - {-1})
+    # Rack detection (handle cases where locs may not have rack columns)
+    if 'rack_id' in locs.columns:
+        num_racks = len(set(locs['rack_id']) - {-1})
+    else:
+        num_racks = 0
     metrics['num_racks'] = num_racks
     
     # Rack pairs (opposite sides)
-    bins_with_sides = locs[(locs['rack_side'] != 'none') & (locs['rack_id'] >= 0)]
-    num_paired_racks = len(bins_with_sides['rack_id'].unique())
-    metrics['num_paired_racks'] = num_paired_racks // 2  # Divide by 2 since each pair counts twice
+    if 'rack_side' in locs.columns and 'rack_id' in locs.columns:
+        bins_with_sides = locs[(locs['rack_side'] != 'none') & (locs['rack_id'] >= 0)]
+        num_paired_racks = len(bins_with_sides['rack_id'].unique())
+        metrics['num_paired_racks'] = num_paired_racks // 2  # Divide by 2 since each pair counts twice
+    else:
+        metrics['num_paired_racks'] = 0
     
     # Average degree (connectivity)
     if metrics['num_nodes'] > 0:
@@ -598,7 +609,7 @@ def analyze_graph_quality(G, locs, verbose=True):
         if num_racks > 0:
             print(f"Inferred racks: {metrics['num_racks']} ({metrics['num_paired_racks']} pairs detected)")
             if metrics['num_paired_racks'] > 0:
-                print(f"  → Paths will route around racks (no shortcuts through shelves)")
+                print(f"  -> Paths will route around racks (no shortcuts through shelves)")
         print("="*60 + "\n")
     
     return metrics

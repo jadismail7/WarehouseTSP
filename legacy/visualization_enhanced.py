@@ -284,7 +284,7 @@ def visualize_route_with_racks(locs, G, route, pick_order, start, end, total_dis
         x = [p[0] for p in pick_pos]
         y = [p[1] for p in pick_pos]
         ax.scatter(x, y, c='green', s=150, marker='*', label='Pick Locations', 
-                  zorder=6, edgecolors='darkgreen', linewidth=2)
+                  zorder=6, edgecolors='forestgreen', linewidth=2)
         
         # Label pick sequence
         for i, node in enumerate(pick_locs, 1):
@@ -294,10 +294,10 @@ def visualize_route_with_racks(locs, G, route, pick_order, start, end, total_dis
     # Highlight start/end
     if start in pos:
         ax.scatter(*pos[start], c='blue', s=250, marker='D', label='Start', 
-                  zorder=8, edgecolors='darkblue', linewidth=2)
+                  zorder=8, edgecolors='navy', linewidth=2)
     if end in pos and end != start:
         ax.scatter(*pos[end], c='purple', s=250, marker='s', label='End', 
-                  zorder=8, edgecolors='darkpurple', linewidth=2)
+                  zorder=8, edgecolors='indigo', linewidth=2)
     
     ax.set_xlabel('X Coordinate', fontsize=12)
     ax.set_ylabel('Y Coordinate', fontsize=12)

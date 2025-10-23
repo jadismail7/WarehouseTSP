@@ -203,7 +203,7 @@ class PhysicalWarehouse:
         if not nx.is_connected(G):
             components = list(nx.connected_components(G))
             if verbose:
-                print(f"  ⚠ Warning: {len(components)} disconnected components")
+                print(f"  Warning: {len(components)} disconnected components")
             
             # Try to connect components by finding closest pairs
             self._connect_components(G, components, verbose)
@@ -250,7 +250,7 @@ class PhysicalWarehouse:
             else:
                 # Can't connect any more components with clear paths
                 if verbose:
-                    print(f"  ⚠ Could not connect all components (remaining: {len(components)})")
+                    print(f"  Warning: Could not connect all components (remaining: {len(components)})")
                 break
     
     def get_bounds(self):

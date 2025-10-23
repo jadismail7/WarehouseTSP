@@ -1,0 +1,18 @@
+# Multi-floor pick list for testing
+# Picks from both floor 1 and floor 2
+
+# Floor 1 picks
+A1-1
+A2-2
+B1-2
+
+# Floor 2 picks  
+B2-3
+C1-3
+C1-1
+
+# More floor 1 picks
+A1-3
+
+# More floor 2 picks
+B1-3
